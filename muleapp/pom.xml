@@ -40,7 +40,7 @@
 						<muleVersion>4.0.3</muleVersion>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
-						<applicationName>muleappDhole</applicationName>
+						<applicationName>muleappDhole100</applicationName>
 						<objectStoreV2>true</objectStoreV2>
 					</CloudHubDeployment>
 				</configuration>
