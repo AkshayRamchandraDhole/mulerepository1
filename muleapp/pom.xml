@@ -7,7 +7,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
-	<name>muleapp</name>
+	<name>muleappDhole</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,10 +15,8 @@
 
 		<app.runtime>4.3.0-20210322</app.runtime>
 		<mule.maven.plugin.version>3.5.1</mule.maven.plugin.version>
-		
 		<sonar.sources>src/main/mule</sonar.sources>
 		<sonar.test/>
-		
 	</properties>
 
 	<build>
@@ -34,19 +32,17 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-						<CloudHubDeployment>
-							<uri>https://anypoint.mulesoft.com</uri>
-							<username>Akshay10</username>
-							<password>Akshay@10</password>
-							<environment>Sandbox</environment>
-							<muleVersion>4.0.3</muleVersion>		
-							<workers>1</workers>
-							<workerType>Micro</workerType>
-							<applicationName>muleapp</applicationName>	
-							<objectStoreV2>true</objectStoreV2>				
-						</CloudHubDeployment>
-						
-					
+					<CloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<username>Akshay10</username>
+						<password>Akshay@10</password>
+						<environment>Sandbox</environment>
+						<muleVersion>4.0.3</muleVersion>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
+						<applicationName>muleappDhole</applicationName>
+						<objectStoreV2>true</objectStoreV2>
+					</CloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -65,12 +61,11 @@
 			<version>1.2.1</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
-			<dependency>
+		<dependency>
 			<groupId>org.sonarsource.scanner.maven</groupId>
 			<artifactId>sonar-maven-plugin</artifactId>
 			<version>3.6.1.1688</version>
 		</dependency>
-	
 	</dependencies>
 
 	<repositories>
